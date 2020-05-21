@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://kit.fontawesome.com/68be93c775.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <title>WeatherUp</title>
+</head>
+<body>
+    <!-- <div class="bg1" id="bg1"></div> -->
+    
+    <div class="cont-bg d-flex justify-content-center align-items-center">
+        <div class="container d-flex flex-column align-items-center main">
+            <h1>WeatherUp</h1>
+
+            <div class="container d-flex justify-content-center mb-5">
+                <button class="btn btn-primary" type="button" id="zip-search">Zip/Postal Code Search</button>
+            </div>
+
+            <div class="container d-flex justify-content-center">
+                <button class="btn btn-primary mb-0" type="button" id="city-search">City Name Search</button>    
+            </div>
+
+            <input class="hidden form-control form-control-lg col-sm-8 mb-3" id="zip-input" type="text" placeholder="Zip Code, Country Code">
+            <input class="hidden form-control form-control-lg col-sm-8 mb-3" id="city-input" type="text" placeholder="City Name">
+
+            <div class="container d-flex justify-content-center mb-3">
+                <button class="hidden btn btn-primary mr-3" type="submit" id="search-btn">SEARCH</button>
+                <button class="hidden btn btn-primary" type="button" id="back-btn">REFRESH</button>
+            </div>
+            
+            <h2 id="location-label"></h2>
+            <h4 id="current-weather"></h4>
+
+            <table class="hidden table table-sm table-borderless col-sm-6" id="current-temp-table">
+                <thead>
+                    <tr>
+                        <th scope="col">Temp</th>
+                        <th scope="col">Feels Like</th>
+                        <th scope="col">Humidity</th>
+                        <th scope="col">High</th>
+                        <th scope="col">Low</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="current-temp">
+                        <!-- Populate by JS function -->
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <table class="hidden table table-borderless col-sm-8" id="daily-forecast-table">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Weather</th>
+                        <th scope="col">High</th>
+                        <th scope="col">Low</th>
+                        <th scope="col">Humidity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="one-day">
+                        <!-- Populated by JS Function -->
+                    </tr>
+                    <tr id="two-day">
+                        <!-- Populated by JS Function -->
+                    </tr>
+                    <tr id="three-day">
+                        <!-- Populated by JS Function -->
+                    </tr>
+                    <tr id="four-day">
+                        <!-- Populated by JS Function -->
+                    </tr>
+                    <tr id="five-day">
+                        <!-- Populated by JS Function -->
+                    </tr>
+                </tbody>
+            </table>
+
+
+        
+        </div>
+    </div>
+    
+    
+    <!-- Optional JavaScript -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="script.js"></script> 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>

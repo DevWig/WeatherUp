@@ -1,0 +1,56 @@
+body {
+    background-image: url("./images/sunny.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: black;
+    padding-bottom: 10rem;
+    margin: auto;
+    
+
+}
+
+h1 {
+    font-family: 'Oleo Script', cursive;
+    font-weight: 700;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    text-align: center;
+}
+
+table {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.cont-bg {
+    height: auto;
+    min-height: 100%;
+    width: 100%;
+    padding-top: 10rem;
+}
+
+.help {
+    font-size: 1.25rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.main {
+    background-color: rgba(255, 255, 255, 0.33);
+    backdrop-filter: blur(5px);
+    padding: 1rem;
+    border-radius: 25px;
+
+
+}
+
+.fas {
+    font-size: 5rem;
+}
